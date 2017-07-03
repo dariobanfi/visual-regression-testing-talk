@@ -1,2 +1,3 @@
 @@ table pages
+    | pageName                                      | path                                                                                       |  preAction                                             |
     | home                                          | /                                                                                          |  none                                                  |
