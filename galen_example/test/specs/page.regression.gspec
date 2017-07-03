@@ -3,4 +3,4 @@
 = regression in ${pageName} =
 
         Body:
-            image file ../../../test-output/dump/pages/${pageName}/${device}/objects/Body.png, error 8px, crop-if-outside
+            image file ../../test-output/dump/pages/${pageName}/${device}/objects/Body.png, error 8px, crop-if-outside
