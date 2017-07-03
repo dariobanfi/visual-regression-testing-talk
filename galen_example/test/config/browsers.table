@@ -1,0 +1,3 @@
+@@ table browsers
+    | browser      | gridArgs |
+    | firefox-47   | --dc.browserName firefox --dc.platform "OS X 10.11" --dc.version "47.0" --dc.recordVideo true --dc.recordScreenshots true |

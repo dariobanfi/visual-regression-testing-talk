@@ -1,11 +1,15 @@
 {
   "name": "galen_example",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "node server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:galen": "galen test -Dgalen.config.file=.galenrc -Dfile.encoding=UTF8 -DapplicationPort=3000 --parallel-tests 4",
+    "test:dump": "npm run test:galen -- test/suites/dump.test --htmlreport 'test-output/dump'",
+    "test:regression": "npm run test:galen -- test/suites/regression.test --htmlreport 'test-output/regression'"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
 }

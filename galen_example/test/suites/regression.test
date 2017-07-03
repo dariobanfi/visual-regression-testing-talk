@@ -1,0 +1,10 @@
+@@import ../config/resolutions.table
+@@import ../config/pages.table
+
+@@ set page http://localhost:3000
+
+@@parameterized using resolutions
+@@parameterized using pages
+Regression ${pageName} for ${device}
+    ${page}${path} ${size}
+        check test/specs/page.regression.gspec --Vdevice "${device}" --VpageName ${pageName}
