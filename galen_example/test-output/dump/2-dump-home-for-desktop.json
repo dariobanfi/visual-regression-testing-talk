@@ -1,0 +1,18 @@
+{
+  "testId" : "2-dump-home-for-desktop",
+  "name" : "Dump home for desktop",
+  "report" : {
+    "nodes" : [ {
+      "name" : "http://localhost:3000/ 1280x1024",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "dump test/specs/page.dump.gspec --name \"home-desktop Test\" --export test-output/dump/pages/home/desktop",
+        "status" : "info",
+        "time" : 1499113627439,
+        "type" : "node"
+      } ],
+      "time" : 1499113625328,
+      "type" : "node"
+    } ]
+  }
+}

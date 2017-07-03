@@ -1,8 +1,9 @@
 {
   "name": "galen_example",
   "version": "1.0.0",
-  "main": "node server.js",
+  "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test:galen": "galen test -Dgalen.config.file=.galenrc -Dfile.encoding=UTF8 -DapplicationPort=3000 --parallel-tests 4",
     "test:dump": "npm run test:galen -- test/suites/dump.test --htmlreport 'test-output/dump'",
     "test:regression": "npm run test:galen -- test/suites/regression.test --htmlreport 'test-output/regression'"
